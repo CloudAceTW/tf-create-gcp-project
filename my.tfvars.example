@@ -1,0 +1,28 @@
+project_info = {
+  id              = "<NEW_PROJECT_ID>"
+  name            = "<NEW_PROJECT_NAME>"
+  org_id          = "<YOUR_ORG_ID>"
+  billing_account = "<YOUR_BILLING_ACCOUNT>"
+  random_suffix   = false
+}
+
+activate_apis = [
+  "cloudbuild.googleapis.com",
+  "clouddeploy.googleapis.com",
+  "artifactregistry.googleapis.com",
+  "cloudresourcemanager.googleapis.com",
+  "iam.googleapis.com",
+  "storage-component.googleapis.com",
+]
+
+# only org users can add into this list
+owners = [
+  "group:admins@example.com",
+  "user:boss@example.com",
+]
+
+editors = [
+  "group:its@example.com",
+  "user:it.admin@example.com",
+  "user:user@other-company.com",
+]
